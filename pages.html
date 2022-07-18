@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<!-- Mirrored from sumowebtools.themeluxury.com/excel-to-pdf by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2022 07:10:40 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Excel to PDF</title>
+    <link rel="shortcut icon" href="https://sumowebtools.themeluxury.com/assets/img/favicon.png" />
+    <meta name="description"
+        content="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." />
+    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+    <link rel="canonical" href="https://sumowebtools.themeluxury.com/excel-to-pdf" />
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Excel to PDF">
+    <meta property="og:description"
+        content="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.">
+    <meta property="og:url" content="https://sumowebtools.themeluxury.com/excel-to-pdf">
+    <meta property="og:site_name" content="Excel to PDF">
+    <meta property="og:updated_time" content="2022-02-23T03:43:32+00:00">
+    <meta name="twitter:title" content="Excel to PDF">
+    <meta name="twitter:description"
+        content="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.">
+    <meta name="twitter:site" content="@ThemeLuxury">
+    <meta name="twitter:creator" content="@ThemeLuxury">
+    <link rel="alternate" hreflang="ar" href="https://sumowebtools.themeluxury.com/ar/excel-to-pdf" />
+    <link rel="alternate" hreflang="de" href="https://sumowebtools.themeluxury.com/de/excel-to-pdf" />
+    <link rel="alternate" hreflang="en" href="https://sumowebtools.themeluxury.com/excel-to-pdf" />
+    <link rel="alternate" hreflang="es" href="https://sumowebtools.themeluxury.com/es/excel-to-pdf" />
+    <link rel="alternate" hreflang="fr" href="https://sumowebtools.themeluxury.com/fr/excel-to-pdf" />
+    <link rel="alternate" hreflang="it" href="https://sumowebtools.themeluxury.com/it/excel-to-pdf" />
+    <link rel="alternate" hreflang="pt" href="https://sumowebtools.themeluxury.com/pt/excel-to-pdf" />
+    <link rel="alternate" hreflang="ru" href="https://sumowebtools.themeluxury.com/ru/excel-to-pdf" />
+    <link rel="alternate" hreflang="tr" href="https://sumowebtools.themeluxury.com/tr/excel-to-pdf" />
+    <link rel="alternate" hreflang="vi" href="https://sumowebtools.themeluxury.com/vi/excel-to-pdf" />
+
+    <script src="https://sumowebtools.themeluxury.com/assets/js/pace.min.js"></script>
+    <link rel="stylesheet" href="https://sumowebtools.themeluxury.com/assets/css/pace-theme-default.min.css">
+
+    <link href="https://sumowebtools.themeluxury.com/assets/css/sweetalert2.min.css" rel="stylesheet">
+
+    <link type="text/css" href="https://sumowebtools.themeluxury.com/assets/css/fontawesome.min.css" rel="stylesheet">
+
+    <script src="https://sumowebtools.themeluxury.com/assets/js/jquery.min.js"></script>
+
+    <link type="text/css" href="https://sumowebtools.themeluxury.com/assets/css/main.ltr.min.css" rel="stylesheet">
+
+    <link type="text/css" href="https://sumowebtools.themeluxury.com/assets/css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <style>
+        body,
+        .card .card-body {
+            font-family: Inter !important;
+        }
+    </style>
+
+
+</head>
+
+<body class="antialiased ">
+    <header class="navbar navbar-expand-md navbar-light d-print-none ">
+        <div class="container-xl">
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-menu" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand d-none-navbar-horizontal pe-0 pe-md-3" title="SumoWebTools"
+                href="https://sumowebtools.themeluxury.com/">
+
+                <img src="https://sumowebtools.themeluxury.com/assets/img/logo-light.svg" width="110" height="32"
+                    alt="SumoWebTools" class="navbar-brand-image">
+
+            </a>
+
+            <div class="navbar-nav flex-row order-md-last">
+
+                <div class="nav-item me-2">
+                    <a class="btn btn-icon bg-white btn-toggle-dir" type="button" data-bs-toggle="tooltip"
+                        data-bs-placement="bottom" title="Direction Mode (LTR / RTL)">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon text-secondary" width="24" height="24"
+                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M5 19h14"></path>
+                            <path d="M17 21l2 -2l-2 -2"></path>
+                            <path d="M16 4h-6.5a3.5 3.5 0 0 0 0 7h.5"></path>
+                            <path d="M14 15v-11"></path>
+                            <path d="M10 15v-11"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="nav-item me-2">
+                    <a class="btn btn-icon bg-white btn-toggle-mode" type="button" data-bs-toggle="tooltip"
+                        data-bs-placement="bottom" title="Theme Mode (Light / Dark)">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon text-warning" width="24" height="24"
+                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <circle cx="12" cy="12" r="4"></circle>
+                            <path
+                                d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7">
+                            </path>
+                        </svg>
+
+                    </a>
+                </div>
+
+                <!-- Begin::Navbar Right -->
+
+
+
+
+
+
+
+
+
+
+
+                <li class="nav-item">
+                    <a class="btn me-2 btn-primary" href="#">
+                        <i class="fas fa-shopping-basket icon"></i>
+                        Buy Now
+                    </a>
+                </li>
+
+
+
+                <!-- End::Navbar Right -->
+
+                <!-- Begin::Login -->
+
+                <div class="nav-item">
+                    <a class="btn btn-success" href="https://sumowebtools.themeluxury.com/login">
+                        <i class="fas fa-user icon"></i>
+                        Login
+                    </a>
+                </div>
+
+                <!-- End::Login -->
+
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <div class="d-flex flex-column flex-md-row flex-fill align-items-stretch align-items-md-center">
+                    <ul class="navbar-nav">
+
+                        <!-- Begin::Navbar Left -->
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#navbarDropdownMenuLink0"
+                                data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button"
+                                aria-expanded="false">
+                                Levels
+                            </a>
+
+                            <div class="dropdown-menu">
+
+
+                                <a class="dropdown-item" href="#">
+                                    Level 2
+                                </a>
+
+
+
+                                <div class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#navbarDropdownMenuChild"
+                                        data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button"
+                                        aria-expanded="false">
+                                        Level 2 with child
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">
+                                            Level 3
+                                        </a>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </li>
+
+
+
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://sumowebtools.themeluxury.com/blog">
+                                Blog
+                            </a>
+                        </li>
+
+
+
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://sumowebtools.themeluxury.com/report">
+                                Report Links
+                            </a>
+                        </li>
+
+
+
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://sumowebtools.themeluxury.com/contact">
+                                Contact
+                            </a>
+                        </li>
+
+
+
+
+
+                        <!-- End::Navbar Left -->
+
+                        <!-- Begin:Lang Menu -->
+
+
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle cursor-pointer" data-bs-toggle="dropdown"
+                                aria-label="Open language menu">
+                                <img src="https://sumowebtools.themeluxury.com/assets/img/flags/en.svg"
+                                    class="lang-menu me-1 my-auto">
+                                English
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a class="dropdown-item border-radius-md mb-1" rel="alternate" hreflang="ar"
+                                    href="https://sumowebtools.themeluxury.com/ar">
+                                    <img src="https://sumowebtools.themeluxury.com/assets/img/flags/ar.svg"
+                                        class="lang-menu me-1 my-auto"> العربية
+                                </a>
+                                <a class="dropdown-item border-radius-md mb-1" rel="alternate" hreflang="de"
+                                    href="https://sumowebtools.themeluxury.com/de">
+                                    <img src="https://sumowebtools.themeluxury.com/assets/img/flags/de.svg"
+                                        class="lang-menu me-1 my-auto"> Deutsch
+                                </a>
+                                <a class="dropdown-item border-radius-md mb-1" rel="alternate" hreflang="en"
+                                    href="https://sumowebtools.themeluxury.com/en">
+                                    <img src="https://sumowebtools.themeluxury.com/assets/img/flags/en.svg"
+                                        class="lang-menu me-1 my-auto"> English
+                                </a>
+                                <a class="dropdown-item border-radius-md mb-1" rel="alternate" hreflang="es"
+                                    href="https://sumowebtools.themeluxury.com/es">
+                                    <img src="https://sumowebtools.themeluxury.com/assets/img/flags/es.svg"
+                                        class="lang-menu me-1 my-auto"> Español
+                                </a>
+                                <a class="dropdown-item border-radius-md mb-1" rel="alternate" hreflang="fr"
+                                    href="https://sumowebtools.themeluxury.com/fr">
+                                    <img src="https://sumowebtools.themeluxury.com/assets/img/flags/fr.svg"
+                                        class="lang-menu me-1 my-auto"> Français
+                                </a>
+                                <a class="dropdown-item border-radius-md mb-1" rel="alternate" hreflang="it"
+                                    href="https://sumowebtools.themeluxury.com/it">
+                                    <img src="https://sumowebtools.themeluxury.com/assets/img/flags/it.svg"
+                                        class="lang-menu me-1 my-auto"> Italiano
+                                </a>
+                                <a class="dropdown-item border-radius-md mb-1" rel="alternate" hreflang="pt"
+                                    href="https://sumowebtools.themeluxury.com/pt">
+                                    <img src="https://sumowebtools.themeluxury.com/assets/img/flags/pt.svg"
+                                        class="lang-menu me-1 my-auto"> Português
+                                </a>
+                                <a class="dropdown-item border-radius-md mb-1" rel="alternate" hreflang="ru"
+                                    href="https://sumowebtools.themeluxury.com/ru">
+                                    <img src="https://sumowebtools.themeluxury.com/assets/img/flags/ru.svg"
+                                        class="lang-menu me-1 my-auto"> Русский
+                                </a>
+                                <a class="dropdown-item border-radius-md mb-1" rel="alternate" hreflang="tr"
+                                    href="https://sumowebtools.themeluxury.com/tr">
+                                    <img src="https://sumowebtools.themeluxury.com/assets/img/flags/tr.svg"
+                                        class="lang-menu me-1 my-auto"> Türkçe
+                                </a>
+                                <a class="dropdown-item border-radius-md mb-1" rel="alternate" hreflang="vi"
+                                    href="https://sumowebtools.themeluxury.com/vi">
+                                    <img src="https://sumowebtools.themeluxury.com/assets/img/flags/vi.svg"
+                                        class="lang-menu me-1 my-auto"> Tiếng Việt
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- End:Lang Menu -->
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <main class="main">
+
+
+        <section id="parallax" class="text-white">
+            <div class="position-relative overflow-hidden text-center bg-light">
+                <span class="mask" style="
+                        
+                        background: #ed3269;
+                        background: -moz-linear-gradient( to left, #ed3269, #f05f3e  );
+                        background: -webkit-linear-gradient( to left, #ed3269, #f05f3e );
+                        background: linear-gradient( to left, #ed3269, #f05f3e );
+                        opacity: 0.9;
+
+                        
+                  "></span>
+
+                <div class="position-absolute start-0 top-0 w-100 parallax-image"
+                    style="background-image: url(https://themeluxury.com/wp-content/uploads/2020/12/parallax.jpg);filter: blur(1px);">
+                </div>
+
+                <div class="container position-relative zindex-1">
+                    <div class="col text-center p-lg-5 mx-auto my-5">
+
+
+                        <h1 class="display-5 font-weight-normal">Excel to PDF</h1>
+                        <h2 class="font-weight-normal"></h2>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-lg-9">
+
+
+                        <section id="content-box" class="mb-3 page-328">
+
+                            <div class="card mb-3">
+                                <div class="card-body">
+
+                                    <div wire:id="i3mCzaaTRnh21InIEN9N"
+                                        wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;i3mCzaaTRnh21InIEN9N&quot;,&quot;name&quot;:&quot;frontend.tools.excel-to-pdf&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;excel-to-pdf&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[&quot;onSetRemoteURL&quot;]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;a63ef4dc&quot;,&quot;data&quot;:{&quot;convertType&quot;:&quot;localFile&quot;,&quot;remote_url&quot;:null,&quot;local_file&quot;:null,&quot;data&quot;:[]},&quot;dataMeta&quot;:[],&quot;checksum&quot;:&quot;31fded1c211bba74d384642186373f10c66c36d6a7d0bc2f110b42b489f714b0&quot;}}">
+                                        <form wire:submit.prevent="onExcelToPdf">
+
+                                            <div class="image-container">
+
+                                                <div>
+                                                    <!-- Validation Errors -->
+                                                </div>
+
+                                                <div class="image-wrapper ">
+
+                                                    <div class="local-image-box dropzone d-flex flex-column p-3">
+                                                        <div class="d-flex mt-auto mx-auto w-75">
+                                                            <div class="row w-100">
+                                                                <div class="col">
+                                                                    <div class="form-group">
+                                                                        <input type="file" class="form-control"
+                                                                            wire:model="local_file" accept=".xls,.xlsx">
+                                                                    </div>
+                                                                </div>
+                                                                <p class="mt-3 text-center">Maximum upload file size: 5
+                                                                    MB</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="d-flex mt-auto flex-end">
+                                                            <small class="ms-auto badge bg-cyan-lt cursor-pointer"
+                                                                wire:click="onConvertType('remoteURL')">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon"
+                                                                    width="24" height="24" viewBox="0 0 24 24"
+                                                                    stroke-width="2" stroke="currentColor" fill="none"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                                    <path
+                                                                        d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+                                                                    <path
+                                                                        d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+                                                                </svg>
+                                                                Use Remote URL
+                                                            </small>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="remote-box d-flex flex-column">
+                                                        <div class="d-flex mt-auto mx-auto w-75">
+                                                            <div class="row w-100">
+                                                                <div class="col">
+                                                                    <div class="input-group input-group-flat">
+                                                                        <input type="text" id="remote_url"
+                                                                            class="form-control" wire:model="remote_url"
+                                                                            placeholder="https://..." />
+                                                                        <span class="input-group-text ">
+                                                                            <a id="paste"
+                                                                                class="link-secondary cursor-pointer"
+                                                                                title="Paste" data-bs-toggle="tooltip"
+                                                                                data-bs-original-title="Paste">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                    class="icon" width="24" height="24"
+                                                                                    viewBox="0 0 24 24" stroke-width="2"
+                                                                                    stroke="currentColor" fill="none"
+                                                                                    stroke-linecap="round"
+                                                                                    stroke-linejoin="round">
+                                                                                    <path stroke="none"
+                                                                                        d="M0 0h24v24H0z" fill="none" />
+                                                                                    <path
+                                                                                        d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
+                                                                                    <rect x="9" y="3" width="6"
+                                                                                        height="4" rx="2" />
+                                                                                </svg>
+                                                                            </a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="d-flex mt-auto flex-end">
+                                                            <small class="ms-auto badge bg-cyan-lt cursor-pointer"
+                                                                wire:click="onConvertType('localFile')">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon"
+                                                                    width="24" height="24" viewBox="0 0 24 24"
+                                                                    stroke-width="2" stroke="currentColor" fill="none"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                                    <line x1="3" y1="19" x2="21" y2="19" />
+                                                                    <rect x="5" y="6" width="14" height="10" rx="1" />
+                                                                </svg>
+                                                                Upload from device
+                                                            </small>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group my-3">
+                                                <button class="btn btn-info mx-auto d-block"
+                                                    wire:loading.attr="disabled">
+                                                    <span>
+                                                        <div wire:loading.inline wire:target="onExcelToPdf">
+                                                            <i class="spinner-border spinner-border-sm me-1"></i>
+                                                        </div>
+                                                        <span wire:target="onExcelToPdf">Convert</span>
+                                                    </span>
+                                                </button>
+                                            </div>
+
+                                        </form>
+
+                                        <div class="modal fade" id="modalPreviewDownloadFile" tabindex="-1"
+                                            role="dialog" aria-labelledby="modalPreviewDownloadFile" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">
+                                                            <svg baseProfile="tiny" xmlns="http://www.w3.org/2000/svg"
+                                                                width="24" height="24" viewBox="0 0 36 36"
+                                                                class="icon me-1 my-auto">
+                                                                <path fill="#A4D06D"
+                                                                    d="M16.688 25.728l-6.61-6.61 2.152-2.152 3.902 3.902 6.08-9.758 2.583 1.61">
+                                                                </path>
+                                                                <path fill="#A4D06D"
+                                                                    d="M18 35.875C8.144 35.875.125 27.855.125 18S8.145.125 18 .125 35.875 8.145 35.875 18 27.855 35.875 18 35.875zm0-33.468C9.402 2.407 2.407 9.402 2.407 18c0 8.598 6.995 15.593 15.593 15.593 8.598 0 15.593-6.995 15.593-15.593 0-8.598-6.995-15.593-15.593-15.593z">
+                                                                </path>
+                                                            </svg>
+                                                            <span>Save your file</span>
+                                                        </h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+
+                                                    <div class="modal-body">
+                                                        <div class="form-group text-center mx-auto mb-3">
+                                                            <a class="btn btn-success download-file">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon"
+                                                                    width="24" height="24" viewBox="0 0 24 24"
+                                                                    stroke-width="2" stroke="currentColor" fill="none"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                                    <path
+                                                                        d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
+                                                                    <polyline points="7 11 12 16 17 11" />
+                                                                    <line x1="12" y1="4" x2="12" y2="16" />
+                                                                </svg>
+                                                                Download File
+                                                            </a>
+                                                        </div>
+
+                                                        <p><iframe class="preview-download-file w-100"
+                                                                height="500px"></iframe></p>
+                                                        <p>Note: This is a preview only. Click the &quot;Download
+                                                            File&quot; button for the final file.</p>
+                                                    </div>
+
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn"
+                                                            data-bs-dismiss="modal">Close</button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <script>
+
+                                        (function ($) {
+                                            "use strict";
+
+                                            document.addEventListener('livewire:load', function () {
+
+                                                var el = document.getElementById('paste');
+
+                                                if (el) {
+
+                                                    el.addEventListener('click', function (paste) {
+
+                                                        paste = document.getElementById('paste');
+
+                                                        '<svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <line x1="4" y1="7" x2="20" y2="7"></line> <line x1="10" y1="11" x2="10" y2="17"></line> <line x1="14" y1="11" x2="14" y2="17"></line> <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12"></path> <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3"></path> </svg>' === paste.innerHTML ? (remote_url.value = "", paste.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2"></path><rect x="9" y="3" width="6" height="4" rx="2"></rect></svg>') : navigator.clipboard.readText().then(function (clipText) {
+
+                                                            window.livewire.find('i3mCzaaTRnh21InIEN9N').set('remote_url', clipText);
+
+                                                        }, paste.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <line x1="4" y1="7" x2="20" y2="7"></line> <line x1="10" y1="11" x2="10" y2="17"></line> <line x1="14" y1="11" x2="14" y2="17"></line> <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12"></path> <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3"></path> </svg>');
+
+                                                    });
+                                                }
+
+                                                jQuery('input#remote_url').change(function () {
+                                                    window.livewire.emit('onSetRemoteURL', this.value)
+                                                });
+
+                                                window.addEventListener('showModal', event => {
+                                                    jQuery('.download-file').attr('href', event.detail.download);
+                                                    jQuery('.preview-download-file').attr('src', event.detail.preview);
+                                                    jQuery('#' + event.detail.id).modal('show');
+                                                });
+
+                                            });
+
+                                        })(jQuery);
+                                    </script>
+                                    <!-- Livewire Component wire-end:i3mCzaaTRnh21InIEN9N -->
+                                </div>
+                            </div>
+
+                            <section>
+                                <div class="card mb-3">
+                                    <div class="d-block card-header related-tools-box text-start bg-teal text-white">
+                                        <h3 class="card-title">Related Tools</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                                                <a class="card text-decoration-none cursor-pointer item-box"
+                                                    href="https://sumowebtools.themeluxury.com/png-to-pdf">
+                                                    <div class="card-body">
+                                                        <div class="d-flex align-items-center">
+                                                            <span class="avatar me-3 bg-transparent"
+                                                                style="background-image: url(https://sumowebtools.themeluxury.com/assets/img/tools/png-to-pdf.svg);"></span>
+                                                            <div>
+                                                                <div class="font-weight-medium">PNG to PDF</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                                                <a class="card text-decoration-none cursor-pointer item-box"
+                                                    href="https://sumowebtools.themeluxury.com/jpg-to-pdf">
+                                                    <div class="card-body">
+                                                        <div class="d-flex align-items-center">
+                                                            <span class="avatar me-3 bg-transparent"
+                                                                style="background-image: url(https://sumowebtools.themeluxury.com/assets/img/tools/jpg-to-pdf.svg);"></span>
+                                                            <div>
+                                                                <div class="font-weight-medium">JPG to PDF</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                                                <a class="card text-decoration-none cursor-pointer item-box"
+                                                    href="https://sumowebtools.themeluxury.com/word-to-odt">
+                                                    <div class="card-body">
+                                                        <div class="d-flex align-items-center">
+                                                            <span class="avatar me-3 bg-transparent"
+                                                                style="background-image: url(https://sumowebtools.themeluxury.com/assets/img/tools/word-to-odt.svg);"></span>
+                                                            <div>
+                                                                <div class="font-weight-medium">Word to ODT</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                                                <a class="card text-decoration-none cursor-pointer item-box"
+                                                    href="https://sumowebtools.themeluxury.com/word-to-html">
+                                                    <div class="card-body">
+                                                        <div class="d-flex align-items-center">
+                                                            <span class="avatar me-3 bg-transparent"
+                                                                style="background-image: url(https://sumowebtools.themeluxury.com/assets/img/tools/word-to-html.svg);"></span>
+                                                            <div>
+                                                                <div class="font-weight-medium">Word to HTML</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                                                <a class="card text-decoration-none cursor-pointer item-box"
+                                                    href="https://sumowebtools.themeluxury.com/odt-to-pdf">
+                                                    <div class="card-body">
+                                                        <div class="d-flex align-items-center">
+                                                            <span class="avatar me-3 bg-transparent"
+                                                                style="background-image: url(https://sumowebtools.themeluxury.com/assets/img/tools/odt-to-pdf.svg);"></span>
+                                                            <div>
+                                                                <div class="font-weight-medium">ODT to PDF</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                                                <a class="card text-decoration-none cursor-pointer item-box"
+                                                    href="https://sumowebtools.themeluxury.com/text-to-pdf">
+                                                    <div class="card-body">
+                                                        <div class="d-flex align-items-center">
+                                                            <span class="avatar me-3 bg-transparent"
+                                                                style="background-image: url(https://sumowebtools.themeluxury.com/assets/img/tools/text-to-pdf.svg);"></span>
+                                                            <div>
+                                                                <div class="font-weight-medium">Text to PDF</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <div class="card">
+
+                                <div class="card-body pb-0">
+
+                                    <div class="area4 d-flex justify-content-center" style="margin:10px;">
+                                        <img class="img-fluid"
+                                            src="https://sumowebtools.themeluxury.com/assets/img/728x90.png">
+                                    </div>
+
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type and scrambled it to make a type specimen
+                                        book.</p>
+                                    <p>It was popularised in the 1960s with the release of Letraset sheets containing
+                                        Lorem Ipsum passages, and more recently with desktop publishing software like
+                                        Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    <p><img src="https://sumowebtools.themeluxury.com/assets/img/nastuh.jpg" alt=""
+                                            width="1200" height="801" /></p>
+                                    <p>t is a long established fact that a reader will be distracted by the readable
+                                        content of a page when looking at its layout. The point of using Lorem Ipsum is
+                                        that it has a more-or-less normal distribution of letters, as opposed to using
+                                        'Content here, content here', making it look like readable English.</p>
+                                    <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as
+                                        their default model text, and a search for 'lorem ipsum' will uncover many web
+                                        sites still in their infancy.</p>
+
+                                    <div class="area5 d-flex justify-content-center" style="margin:10px;">
+                                        <img class="img-fluid"
+                                            src="https://sumowebtools.themeluxury.com/assets/img/728x90.png">
+                                    </div>
+
+
+                                    <div class="social-share text-center">
+                                        <div class="is-divider"></div>
+                                        <div class="share-icons relative">
+
+                                            <a wire:ignore
+                                                href="https://www.facebook.com/sharer.php?u=https://sumowebtools.themeluxury.com/excel-to-pdf"
+                                                onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https://sumowebtools.themeluxury.com/excel-to-pdf','facebook','height=500,width=800,resizable=1,scrollbars=yes'); return false;"
+                                                data-label="Facebook" rel="noopener noreferrer nofollow" target="_blank"
+                                                class="btn btn-facebook btn-simple rounded p-2">
+                                                <i class="fab fa-facebook"></i>
+                                            </a>
+
+                                            <a wire:ignore
+                                                href="https://twitter.com/share?url=https://sumowebtools.themeluxury.com/excel-to-pdf"
+                                                onclick="window.open('https://twitter.com/share?url=https://sumowebtools.themeluxury.com/excel-to-pdf','twitter','height=500,width=800,resizable=1,scrollbars=yes'); return false;"
+                                                rel="noopener noreferrer nofollow" target="_blank"
+                                                class="btn btn-twitter btn-simple rounded p-2">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+
+                                            <a wire:ignore
+                                                href="https://www.pinterest.com/pin-builder/?url=https://sumowebtools.themeluxury.com/excel-to-pdf&amp;media=&amp;description=Excel%20to%20PDF"
+                                                onclick="window.open('https://www.pinterest.com/pin-builder/?url=https://sumowebtools.themeluxury.com/excel-to-pdf&amp;media=&amp;description=Excel%20to%20PDF','pinterest','height=500,width=800,resizable=1,scrollbars=yes'); return false;"
+                                                rel="noopener noreferrer nofollow" target="_blank"
+                                                class="btn btn-pinterest btn-simple rounded p-2">
+                                                <i class="fab fa-pinterest"></i>
+                                            </a>
+
+                                            <a wire:ignore
+                                                href="https://www.linkedin.com/sharing/share-offsite/?url=https://sumowebtools.themeluxury.com/excel-to-pdf"
+                                                onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url=https://sumowebtools.themeluxury.com/excel-to-pdf','linkedin','height=500,width=800,resizable=1,scrollbars=yes'); return false;"
+                                                rel="noopener noreferrer nofollow" target="_blank"
+                                                class="btn btn-linkedin btn-simple rounded p-2">
+                                                <i class="fab fa-linkedin"></i>
+                                            </a>
+
+                                            <a wire:ignore
+                                                href="https://www.reddit.com/submit?url=https://sumowebtools.themeluxury.com/excel-to-pdf&amp;title=Excel%20to%20PDF"
+                                                onclick="window.open('https://www.reddit.com/submit?url=https://sumowebtools.themeluxury.com/excel-to-pdf&amp;title=Excel%20to%20PDF','reddit','height=500,width=800,resizable=1,scrollbars=yes'); return false;"
+                                                rel="noopener noreferrer nofollow" target="_blank"
+                                                class="btn btn-reddit btn-simple rounded p-2">
+                                                <i class="fab fa-reddit"></i>
+                                            </a>
+
+                                            <a wire:ignore
+                                                href="https://tumblr.com/widgets/share/tool?canonicalUrl=https://sumowebtools.themeluxury.com/excel-to-pdf"
+                                                onclick="window.open('https://tumblr.com/widgets/share/tool?canonicalUrl=https://sumowebtools.themeluxury.com/excel-to-pdf','tumblr','height=500,width=800,resizable=1,scrollbars=yes'); return false;"
+                                                target="_blank" class="btn btn-tumblr btn-simple rounded p-2"
+                                                rel="noopener noreferrer nofollow">
+                                                <i class="fab fa-tumblr"></i>
+                                            </a>
+
+                                        </div>
+                                    </div>
+
+
+                                    <hr class="horizontal dark">
+                                    <div class="my-3">
+                                        <div class="row">
+
+                                            <div class="col-lg-2">
+                                                <div class="position-relative mb-3">
+                                                    <div class="blur-shadow-image">
+                                                        <img class="w-100 rounded-3 shadow-sm"
+                                                            src="https://sumowebtools.themeluxury.com/assets/img/avatar.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-10 ps-0">
+                                                <div class="card-body text-start py-0">
+
+                                                    <div class="p-md-0 pt-3">
+                                                        <h5 class="font-weight-bolder mb-0">James Smith</h5>
+                                                        <p class="text-uppercase text-sm font-weight-bold mb-2">CEO /
+                                                            Co-Founder</p>
+                                                    </div>
+
+                                                    <p class="mb-3">Enjoy the little things in life. For one day, you
+                                                        may look back and realize they were the big things. Many of
+                                                        life&#039;s failures are people who did not realize how close
+                                                        they were to success when they gave up.</p>
+
+
+
+                                                    <a class="btn btn-facebook btn-simple mb-0 ps-1 pe-2 py-0"
+                                                        href="https://www.facebook.com/themeluxury" target="blank">
+                                                        <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+                                                    </a>
+
+
+                                                    <a class="btn btn-twitter btn-simple mb-0 ps-1 pe-2 py-0"
+                                                        href="https://twitter.com/ThemeLuxury" target="blank">
+                                                        <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+                                                    </a>
+
+
+                                                    <a class="btn btn-instagram btn-simple mb-0 ps-1 pe-2 py-0"
+                                                        href="https://www.instagram.com/themeluxury/" target="blank">
+                                                        <i class="fab fa-instagram fa-lg" aria-hidden="true"></i>
+                                                    </a>
+
+
+                                                    <a class="btn btn-pinterest btn-simple mb-0 ps-1 pe-2 py-0"
+                                                        href="https://www.pinterest.com/themeluxury" target="blank">
+                                                        <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+                                                    </a>
+
+
+                                                    <a class="btn btn-github btn-simple mb-0 ps-1 pe-2 py-0"
+                                                        href="https://github.com/ThemeLuxury" target="blank">
+                                                        <i class="fab fa-github fa-lg" aria-hidden="true"></i>
+                                                    </a>
+
+
+                                                    <a class="btn btn-youtube btn-simple mb-0 ps-1 pe-2 py-0"
+                                                        href="https://www.youtube.com/channel/UCu5HWVT5kdyhw_JLZImmYTA"
+                                                        target="blank">
+                                                        <i class="fab fa-youtube fa-lg" aria-hidden="true"></i>
+                                                    </a>
+
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="col-lg-3 ml-auto">
+                        <div class="mb-3">
+                            <div class="sidebar_top d-flex justify-content-center" style="margin:0px;">
+                                <img class="img-fluid"
+                                    src="https://sumowebtools.themeluxury.com/assets/img/300x250.png">
+                            </div>
+
+                        </div>
+
+                        <div class="card mb-3">
+                            <div class="card-header d-block text-start bg-teal text-white">
+                                <h3 class="card-title">Popular Tools</h3>
+                            </div>
+                            <div class="list-group list-group-flush list-group-hoverable">
+
+                                <div class="list-group-item">
+                                    <div class="row align-items-center">
+                                        <div class="col d-flex">
+                                            <span>
+                                                <i class="fas fa-check text-success me-2"></i>
+                                            </span>
+                                            <a href="https://sumowebtools.themeluxury.com/youtube-thumbnail-downloader"
+                                                class="text-body d-block">YouTube Thumbnail Downloader</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="row align-items-center">
+                                        <div class="col d-flex">
+                                            <span>
+                                                <i class="fas fa-check text-success me-2"></i>
+                                            </span>
+                                            <a href="https://sumowebtools.themeluxury.com/image-resizer"
+                                                class="text-body d-block">Image Resizer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="row align-items-center">
+                                        <div class="col d-flex">
+                                            <span>
+                                                <i class="fas fa-check text-success me-2"></i>
+                                            </span>
+                                            <a href="https://sumowebtools.themeluxury.com/image-to-base64"
+                                                class="text-body d-block">Image to Base64</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="row align-items-center">
+                                        <div class="col d-flex">
+                                            <span>
+                                                <i class="fas fa-check text-success me-2"></i>
+                                            </span>
+                                            <a href="https://sumowebtools.themeluxury.com/find-facebook-id"
+                                                class="text-body d-block">Find Facebook ID</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="row align-items-center">
+                                        <div class="col d-flex">
+                                            <span>
+                                                <i class="fas fa-check text-success me-2"></i>
+                                            </span>
+                                            <a href="https://sumowebtools.themeluxury.com/password-generator"
+                                                class="text-body d-block">Password Generator</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="row align-items-center">
+                                        <div class="col d-flex">
+                                            <span>
+                                                <i class="fas fa-check text-success me-2"></i>
+                                            </span>
+                                            <a href="https://sumowebtools.themeluxury.com/ico-converter"
+                                                class="text-body d-block">ICO Converter</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="row align-items-center">
+                                        <div class="col d-flex">
+                                            <span>
+                                                <i class="fas fa-check text-success me-2"></i>
+                                            </span>
+                                            <a href="https://sumowebtools.themeluxury.com/word-counter"
+                                                class="text-body d-block">Word Counter</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="row align-items-center">
+                                        <div class="col d-flex">
+                                            <span>
+                                                <i class="fas fa-check text-success me-2"></i>
+                                            </span>
+                                            <a href="https://sumowebtools.themeluxury.com/case-converter"
+                                                class="text-body d-block">Case Converter</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="row align-items-center">
+                                        <div class="col d-flex">
+                                            <span>
+                                                <i class="fas fa-check text-success me-2"></i>
+                                            </span>
+                                            <a href="https://sumowebtools.themeluxury.com/qr-code-generator"
+                                                class="text-body d-block">QR Code Generator</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="row align-items-center">
+                                        <div class="col d-flex">
+                                            <span>
+                                                <i class="fas fa-check text-success me-2"></i>
+                                            </span>
+                                            <a href="https://sumowebtools.themeluxury.com/javascript-obfuscator"
+                                                class="text-body d-block">Javascript Obfuscator</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <div class="sidebar_middle d-flex justify-content-center" style="margin:0px;">
+                                <img class="img-fluid"
+                                    src="https://sumowebtools.themeluxury.com/assets/img/300x250.png">
+                            </div>
+                        </div>
+
+                        <div class="card mb-3">
+                            <div class="card-header d-block text-start bg-teal text-white">
+                                <h3 class="card-title">Recent Posts</h3>
+                            </div>
+                            <div class="list-group list-group-flush list-group-hoverable">
+
+                                <div class="list-group-item">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <a href="https://sumowebtools.themeluxury.com/the-storms-of-the-waves">
+                                                <span class="avatar"
+                                                    style="background-image: url(https://sumowebtools.themeluxury.com/assets/img/nastuh.jpg);"></span>
+                                            </a>
+                                        </div>
+                                        <div class="col text-truncate">
+                                            <a href="https://sumowebtools.themeluxury.com/the-storms-of-the-waves"
+                                                class="text-body d-block text-nowrap"
+                                                title="The storms of the waves">The storms of the waves</a>
+                                            <small class="d-block text-muted text-truncate mt-n1">February 26,
+                                                2022</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <a href="https://sumowebtools.themeluxury.com/lovely-and-cosy-apartment">
+                                                <span class="avatar"
+                                                    style="background-image: url(https://sumowebtools.themeluxury.com/assets/img/nastuh.jpg);"></span>
+                                            </a>
+                                        </div>
+                                        <div class="col text-truncate">
+                                            <a href="https://sumowebtools.themeluxury.com/lovely-and-cosy-apartment"
+                                                class="text-body d-block text-nowrap"
+                                                title="Lovely and cosy apartment">Lovely and cosy apartment</a>
+                                            <small class="d-block text-muted text-truncate mt-n1">February 23,
+                                                2022</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <a href="https://sumowebtools.themeluxury.com/where-can-i-get-some">
+                                                <span class="avatar"
+                                                    style="background-image: url(https://sumowebtools.themeluxury.com/assets/img/nastuh.jpg);"></span>
+                                            </a>
+                                        </div>
+                                        <div class="col text-truncate">
+                                            <a href="https://sumowebtools.themeluxury.com/where-can-i-get-some"
+                                                class="text-body d-block text-nowrap"
+                                                title="Where can I get some?">Where can I get some?</a>
+                                            <small class="d-block text-muted text-truncate mt-n1">February 23,
+                                                2022</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <a href="https://sumowebtools.themeluxury.com/where-does-it-come-from">
+                                                <span class="avatar"
+                                                    style="background-image: url(https://sumowebtools.themeluxury.com/assets/img/nastuh.jpg);"></span>
+                                            </a>
+                                        </div>
+                                        <div class="col text-truncate">
+                                            <a href="https://sumowebtools.themeluxury.com/where-does-it-come-from"
+                                                class="text-body d-block text-nowrap"
+                                                title="Where does it come from?">Where does it come from?</a>
+                                            <small class="d-block text-muted text-truncate mt-n1">February 23,
+                                                2022</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <a href="https://sumowebtools.themeluxury.com/why-do-we-use-it">
+                                                <span class="avatar"
+                                                    style="background-image: url(https://sumowebtools.themeluxury.com/assets/img/nastuh.jpg);"></span>
+                                            </a>
+                                        </div>
+                                        <div class="col text-truncate">
+                                            <a href="https://sumowebtools.themeluxury.com/why-do-we-use-it"
+                                                class="text-body d-block text-nowrap" title="Why do we use it?">Why do
+                                                we use it?</a>
+                                            <small class="d-block text-muted text-truncate mt-n1">February 23,
+                                                2022</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <a href="https://sumowebtools.themeluxury.com/what-is-lorem-ipsum">
+                                                <span class="avatar"
+                                                    style="background-image: url(https://sumowebtools.themeluxury.com/assets/img/nastuh.jpg);"></span>
+                                            </a>
+                                        </div>
+                                        <div class="col text-truncate">
+                                            <a href="https://sumowebtools.themeluxury.com/what-is-lorem-ipsum"
+                                                class="text-body d-block text-nowrap" title="What is Lorem Ipsum?">What
+                                                is Lorem Ipsum?</a>
+                                            <small class="d-block text-muted text-truncate mt-n1">February 23,
+                                                2022</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <div class="sidebar_bottom d-flex justify-content-center" style="margin:0px;">
+                                <img class="img-fluid"
+                                    src="https://sumowebtools.themeluxury.com/assets/img/300x600.png">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer pt-3 mt-3 pb-0">
+
+        <h3 class="text-center mb-3">Follow us</h3>
+        <div class="social-share text-center">
+            <div class="share-icons relative">
+                <a href="https://www.facebook.com/themeluxury"
+                    class="btn btn-facebook btn-simple rounded social-shadow p-2" target="_blank">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="https://twitter.com/ThemeLuxury" class="btn btn-twitter btn-simple rounded social-shadow p-2"
+                    target="_blank">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a href="https://www.instagram.com/themeluxury/"
+                    class="btn btn-instagram btn-simple rounded social-shadow p-2" target="_blank">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="https://www.pinterest.com/themeluxury"
+                    class="btn btn-pinterest btn-simple rounded social-shadow p-2" target="_blank">
+                    <i class="fab fa-pinterest fa-2x"></i>
+                </a>
+                <a href="https://github.com/ThemeLuxury" class="btn btn-github btn-simple rounded social-shadow p-2"
+                    target="_blank">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCu5HWVT5kdyhw_JLZImmYTA"
+                    class="btn btn-youtube btn-simple rounded social-shadow p-2" target="_blank">
+                    <i class="fab fa-youtube fa-2x"></i>
+                </a>
+            </div>
+        </div>
+
+        <hr class="horizontal dark mb-5">
+
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-md-3 mb-3">
+                    <div>
+                        <h3 class="text-primary font-weight-bolder">About Us</h3>
+                        <p>Vestibulum quis risus sed nisl pellentesque aliquet et et lorem.</p>
+                        <p>Fusce nibh nisl, gravida nec ipsum eu, feugiat condimentum velit.</p>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-6 col-6 mb-3">
+                    <div>
+                        <h3 class="text-primary font-weight-bolder">Features</h3>
+                        <ul class="flex-column ms-n3 nav">
+                            <li class="nav-item"><a class="nav-link ps-0" title="Help Center" href="#">Help Center</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link ps-0" title="Paid with Mobile" href="#">Paid with
+                                    Mobile</a></li>
+                            <li class="nav-item"><a class="nav-link ps-0" title="Status" href="#">Status</a></li>
+                            <li class="nav-item"><a class="nav-link ps-0" title="Changelog" href="#">Changelog</a></li>
+                            <li class="nav-item"><a class="nav-link ps-0" title="Contact Support" href="#">Contact
+                                    Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-6 col-6 mb-3">
+                    <div>
+                        <h3 class="text-primary font-weight-bolder">Support</h3>
+                        <ul class="flex-column ms-n3 nav">
+                            <li class="nav-item"><a class="nav-link ps-0" title="Home" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link ps-0" title="About" href="#">About</a></li>
+                            <li class="nav-item"><a class="nav-link ps-0" title="FAQs" href="#">FAQs</a></li>
+                            <li class="nav-item"><a class="nav-link ps-0" title="Support" href="#">Support</a></li>
+                            <li class="nav-item"><a class="nav-link ps-0" title="Contact" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-6 col-6 mb-3">
+                    <div>
+                        <h3 class="text-primary font-weight-bolder">Trending</h3>
+                        <ul class="flex-column ms-n3 nav">
+                            <li class="nav-item"><a class="nav-link ps-0" title="Shop" href="#">Shop</a></li>
+                            <li class="nav-item"><a class="nav-link ps-0" title="Portfolio" href="#">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link ps-0" title="Blog" href="#">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link ps-0" title="Events" href="#">Events</a></li>
+                            <li class="nav-item"><a class="nav-link ps-0" title="Forums" href="#">Forums</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-6 col-6 mb-3 me-auto">
+                    <div>
+                        <h3 class="text-primary font-weight-bolder">Legal</h3>
+                        <ul class="flex-column ms-n3 nav">
+                            <li class="nav-item"><a class="nav-link ps-0" title="Knowledge Center" href="#">Knowledge
+                                    Center</a></li>
+                            <li class="nav-item"><a class="nav-link ps-0" title="Custom Development" href="#">Custom
+                                    Development</a></li>
+                            <li class="nav-item"><a class="nav-link ps-0" title="Sponsorships" href="#">Sponsorships</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link ps-0" title="Terms &amp; Conditions" href="#">Terms
+                                    &amp; Conditions</a></li>
+                            <li class="nav-item"><a class="nav-link ps-0" title="Privacy Policy" href="#">Privacy
+                                    Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12">
+                    <div class="text-center">
+                        <p class="my-4 text-sm">
+                        <p>Copyrights © 2022. All Rights Reserved by <a title="ThemeLuxury"
+                                href="https://themeluxury.com/" target="_blank" rel="noopener">ThemeLuxury</a>.</p>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Theme JS -->
+    <script src="https://sumowebtools.themeluxury.com/assets/js/main.min.js"></script>
+
+
+
+    <!-- Sweetalert2 -->
+    <script src="https://sumowebtools.themeluxury.com/assets/js/sweetalert2.min.js"></script>
+
+    <script src="https://sumowebtools.themeluxury.com/assets/js/prebid-ads.js"></script>
+
+    <script>
+        (function ($) {
+            "use strict";
+
+            if (window.canRunAds === undefined) {
+                Swal.fire({
+                    title: "You&#039;re blocking ads",
+                    text: "Our website is made possible by displaying online ads to our visitors. Please consider supporting us by disabling your ad blocker.",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonText: "I have disabled Adblock",
+                    cancelButtonText: "No, thanks!"
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location.reload();
+                    }
+                });
+            }
+
+        })(jQuery);
+    </script>
+
+
+
+
+    <div class="cookies-wrapper position-fixed text-center">
+        <div class="bg-white text-dark py-3 px-2 rounded shadow">
+            <div class="card-body">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cookie" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M8 13v.01"></path>
+                        <path d="M12 17v.01"></path>
+                        <path d="M12 12v.01"></path>
+                        <path d="M16 14v.01"></path>
+                        <path d="M11 8v.01"></path>
+                        <path
+                            d="M13.148 3.476l2.667 1.104a4 4 0 0 0 4.656 6.14l.053 .132a3 3 0 0 1 0 2.296c-.497 .786 -.838 1.404 -1.024 1.852c-.189 .456 -.409 1.194 -.66 2.216a3 3 0 0 1 -1.624 1.623c-1.048 .263 -1.787 .483 -2.216 .661c-.475 .197 -1.092 .538 -1.852 1.024a3 3 0 0 1 -2.296 0c-.802 -.503 -1.419 -.844 -1.852 -1.024c-.471 -.195 -1.21 -.415 -2.216 -.66a3 3 0 0 1 -1.623 -1.624c-.265 -1.052 -.485 -1.79 -.661 -2.216c-.198 -.479 -.54 -1.096 -1.024 -1.852a3 3 0 0 1 0 -2.296c.48 -.744 .82 -1.361 1.024 -1.852c.171 -.413 .391 -1.152 .66 -2.216a3 3 0 0 1 1.624 -1.623c1.032 -.256 1.77 -.476 2.216 -.661c.458 -.19 1.075 -.531 1.852 -1.024a3 3 0 0 1 2.296 0z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <h2>Cookies!</h2>
+                    <span class="text-start">We use cookies to ensure that we give you the best experience on our
+                        website. If you continue to use this site we will assume that you are happy with it.</span>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button id="acceptCookies" class="btn bg-white mb-0 text-capitalize text-dark"> Accept all cookies
+                </button>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <script>
+        (function ($) {
+            "use strict";
+
+            jQuery("#acceptCookies").click(function () {
+                jQuery.ajax({
+                    type: 'get',
+                    url: 'https://sumowebtools.themeluxury.com/cookies/accept',
+                    success: function (e) {
+                        jQuery('.cookies-wrapper').remove();
+                    }
+                });
+            });
+
+        })(jQuery);
+    </script>
+
+
+    <script>
+        (function ($) {
+            "use strict";
+
+            jQuery(".btn-toggle-dir").click(function () {
+                jQuery.ajax({
+                    type: 'get',
+                    url: 'https://sumowebtools.themeluxury.com/dir/mode',
+                    success: function (e) {
+                        window.location.reload();
+                    }
+                });
+            });
+
+        })(jQuery);
+    </script>
+
+    <script>
+        (function ($) {
+            "use strict";
+
+            jQuery(".btn-toggle-mode").click(function () {
+                jQuery.ajax({
+                    type: 'get',
+                    url: 'https://sumowebtools.themeluxury.com/theme/mode',
+                    success: function (e) {
+                        window.location.reload();
+                    }
+                });
+            });
+
+        })(jQuery);
+    </script>
+
+    <script>
+        function copyToClipboard() {
+            document.getElementById("text").select();
+            document.execCommand('copy');
+        }
+    </script>
+
+
+    </div>
+    <!-- Livewire Component wire-end:EzU7LgZCYt8BThGdA1DG -->
+    <script src="https://sumowebtools.themeluxury.com/vendor/livewire/livewire.js?id=9a36ebbddb8dd0aa91b1"
+        data-turbo-eval="false" data-turbolinks-eval="false"></script>
+    <script data-turbo-eval="false"
+        data-turbolinks-eval="false">window.livewire = new Livewire(); window.Livewire = window.livewire; window.livewire_app_url = 'https://sumowebtools.themeluxury.com/'; window.livewire_token = 'pVUe8Mo24MaDdy9cTTrZcaCDKpdAE8htDm7RdovF'; window.deferLoadingAlpine = function (callback) { window.addEventListener('livewire:load', function () { callback(); }); }; let started = false; window.addEventListener('alpine:initializing', function () { if (!started) { window.livewire.start(); started = true; } }); document.addEventListener("DOMContentLoaded", function () { if (!started) { window.livewire.start(); started = true; } });</script>
+
+
+</body>
+
+<!-- Mirrored from sumowebtools.themeluxury.com/excel-to-pdf by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2022 07:10:40 GMT -->
+
+</html>
